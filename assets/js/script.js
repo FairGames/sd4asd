@@ -13,6 +13,15 @@ function openSocial(type) {
       url = 'https://github.com/secret';
       break;
     case 'twitter':
+      url = 'https://twitter.com/riotnetwork01';
+      break;
+	case 'instagram':
+      url = 'https://www.instagram.com/riotnetwork01';
+      break;
+	case 'facebook':
+      url = 'https://twitter.com/secret';
+      break;
+	case 'youtube':
       url = 'https://twitter.com/secret';
       break;
   }

@@ -12,6 +12,9 @@ function openSocial(type) {
     case 'github':
       url = 'https://github.com/secret';
       break;
+	case 'store':
+      url = 'https://store.riot-network.ga/';
+	  break;
     case 'twitter':
       url = 'https://twitter.com/riotnetwork01';
       break;

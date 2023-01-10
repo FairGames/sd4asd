@@ -4,8 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Countdown to Brexit 2019</title>
-	<meta name="author" content="Santiago Méndez">
+	<title>Odpočet do spuštění serveru</title>
+	<meta name="author" content="Riot Network">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 	</script>
@@ -46,7 +46,7 @@
 	<script src="js/jquery.countdown.min.js"></script>
 	<script>
 		$(document).ready(function () {
-			var breXit = moment.tz("2020-01-31 23:00:00", "Europe/London");
+			var breXit = moment.tz("2023-01-27 18:00:00", "Europe/Prague");
 
 			$('#clock').countdown(breXit.toDate(), function (event) {
 				$(this).html(event.strftime('' +

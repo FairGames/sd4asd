@@ -17,19 +17,19 @@
 
 <body>
 	<div class="everything">
-		<!--<div class="ticker">
+		<!-- <div class="ticker">
 			<ul id="newsTicker" data-rss-feed="http://home.cern/about/updates/feed" data-rss-link-titles="false"
 			data-rss-title-wrapper="h4" data-rss-max="5">
 
 			</ul>
-		</div>-->
-		<a class="github" href="https://github.com/twinysam/BrexitCountdown2019" target="_blank"><img src="images/GitHub-Mark-Light-32px.png" alt="Github icon"></a>
+		</div> -->
+		<a class="github" href="https://dev86.tk/" target="_blank"><img src="images/GitHub-Mark-Light-32px.png" alt="Github icon"></a>
 		<div class="container">
 
 			<div class="countdown">
-				<h1>Brexit Countdown</h1>
-				<p>UK's remaining time in the European Union. <a
-						href="https://en.wikipedia.org/wiki/Brexit_negotiations_in_2019" target="_blank">More info.</a>
+				<h1>SPUŠTĚNÍ SERVERU</h1>
+				<p><a
+						href="http://riot-network.ga/" target="_blank">Odkazy</a>
 				</p>
 				<div id="clock">
 					<!--<div class="time">48 <span class="labels">days</span></div>
@@ -53,10 +53,10 @@
 
 			$('#clock').countdown(breXit.toDate(), function (event) {
 				$(this).html(event.strftime('' +
-					'<div class="time">%D  <span class="labels">days</span></div>' +
-					'<div class="time">%H  <span class="labels">hours</span></div>' +
-					'<div class="time">%M  <span class="labels">minutes</span></div>' +
-					'<div class="time">%S <span class="labels">seconds</span></div>'));
+					'<div class="time">%D  <span class="labels">dní</span></div>' +
+					'<div class="time">%H  <span class="labels">hodin</span></div>' +
+					'<div class="time">%M  <span class="labels">minut</span></div>' +
+					'<div class="time">%S <span class="labels">sekund</span></div>'));
 			});
 
 			$('#newsTicker').webTicker({

@@ -27,6 +27,9 @@ function openSocial(type) {
 	case 'youtube':
       url = 'https://twitter.com/secret';
       break;
+	case 'bans':
+      url = 'https://bans.riot-network.eu:7896/bans.php';
+      break;
   }
 
   window.open(url);

@@ -28,7 +28,7 @@ function openSocial(type) {
       url = 'https://twitter.com/secret';
       break;
 	case 'bans':
-      url = 'https://bans.riot-network.eu:7896/bans.php';
+      url = 'http://bans.riot-network.eu:7896/bans.php';
       break;
   }
 

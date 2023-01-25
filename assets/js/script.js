@@ -77,7 +77,7 @@ function startMainTyping() {
 }
 
 function switchScreen() {
-  document.title = 'riot-network.ga | home';
+  document.title = 'riot-network.eu | home';
 
   $('.intro').fadeOut(1000, function () {
     $('.bg-image').fadeIn(1000);

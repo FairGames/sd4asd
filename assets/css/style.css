@@ -98,3 +98,52 @@ p,
 .social-logo:hover {
   transform: scale(1.5);
 }
+
+.bottomleft {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 12px;
+  color: silver;
+  font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .footer {
+      position: absolute;
+      bottom: 15%;
+  }
+}
+
+@media (max-width: 768px) {
+  .social-logo {
+    padding-left: 10px;
+    padding-right: 10px;
+  
+    transition: transform 0.2s;
+  
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    
+    backdrop-filter: blur(10px);
+  
+    width: 90%;
+  
+    height: 50%;
+    max-width: 580px;
+    
+    border-radius: 5px;
+  }
+}

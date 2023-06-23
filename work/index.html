@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="Hypixel - Home" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="img/logo.png" />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:site" content="" />
+    <meta property="twitter:creator" content="" />
+
+    <title>Hypixel - Home</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link rel="canonical" href="" />
+
+    <!-- StyleSheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <div id="loader">
+      <div class="preloader-background"></div>
+      <div class="preloader">
+        <img class="center-image" src="img/small-logo.png" draggable="false" alt="Hypixel Logo" />
+        <div class="status">
+          <br />
+          <h1>Loading...</h1>
+          <br />
+          <noscript>Please turn JavaScript on and reload the page.<br /></noscript>
+          You don't have to do anything. You will be redirected to the requested content shortly.
+          <br />
+          Please allow up to few seconds...
+        </div>
+      </div>
+    </div>
+
+    <main id="page">
+      <!-- Navbar -->
+      <div class="mobile-display">
+        <div class="mobile-mask"></div>
+        <div class="mobile-navbar">
+          <div class="mobile-navbar-header">
+            <div class="mobile-navbar-close mt-3">
+              <span class="js-menu-toggle"><i class="bx bx-x-circle"></i></span>
+            </div>
+          </div>
+          <div class="mobile-navbar-body"></div>
+        </div>
+      </div>
+
+      <header id="header" class="desktop-navbar" role="banner">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-11 col-xl-2">
+              <img class="navbar-brand" src="img/logo.png" draggable="false" alt="Hypixel Logo" />
+            </div>
+            <div class="col-12 col-md-10 d-none d-xl-block">
+              <nav class="site-navigation position-relative text-right" role="navigation">
+                <ul class="navbar-menu js-clone-nav mr-auto d-none d-lg-block">
+                  <li>
+                    <a href="index.html" class="no-effect active"><span>Home</span></a>
+                  </li>
+                  <li>
+                    <a href="#about" class="no-effect"><span>About</span></a>
+                  </li>
+                  <li>
+                    <a href="#games" class="no-effect"><span>Games</span></a>
+                  </li>
+                  <li>
+                    <a href="#sponsor" class="no-effect"><span>Partners</span></a>
+                  </li>
+                  <li>
+                    <a href="#testimonials" class="no-effect"><span>Testimonials</span></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="mobile-menu-toggle d-xl-none">
+            <a href="#" class="js-menu-toggle no-effect">
+              <span class="h1"><i class="bx bx-menu"></i></span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Cookies -->
+      <div id="cookie-popup" style="display: none">
+        <div class="text-center" id="cookie-header">
+          <img src="img/icons/cookie.png" draggable="false" />
+        </div>
+        <div id="cookie-body">
+          <p>This website uses cookies to ensure you get the best experience on our website.</p>
+          <a href="https://www.cookieconsent.com/what-are-cookies/">Learn more...</a>
+          <div class="cookie-buttons">
+            <button id="btn-cookie" type="submit">Got it</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Header -->
+      <section id="intro">
+        <div id="intro-image"></div>
+        <div id="intro-overlay"></div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-sm-pull-12 animate__animated animate__fadeInLeft">
+              <h1 class="section-title animate__animated animate__fadeInDown">Welcome on<br />Hypixel Network</h1>
+              <p class="animate__animated animate__fadeInLeft">Lorem ipsum dolor sit amet, <b>consectetur</b> adipiscing elit. Suspendisse sodales neque odio, in dignissim quam mollis <b>rutrum</b>. Sed iaculis bibendum augue ut efficitur. Praesent maximus massa ut aliquam semper.</p>
+              <button id="copyip" class="animate__animated animate__fadeInLeft" value="mc.hypixel.net">Join our Minecraft Server</button>
+              <button class="server-status animate__animated animate__fadeInLeft">Online</button>
+            </div>
+            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 justify-content-center text-center col-sm-push-12 animate__animated animate__fadeInRight">
+              <img class="server-image" src="img/small-logo.png" draggable="false" />
+            </div>
+          </div>
+          <div class="text-center arrow animate__animated animate__fadeInUp">
+            <img id="intro-arrow" class="bounce animated hinge animated infinite" src="img/icons/chevron-down.png" draggable="false" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Alert -->
+      <section class="container" role="alert">
+        <div class="alert">
+          <div class="alert-icon">
+            <svg class="alert-icon-svg" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" style="color: var(--orange-color)">
+              <g>
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12" y2="16"></line>
+              </g>
+            </svg>
+          </div>
+          <p class="alert-textbox">
+            <span class="alert-text">
+              <span>
+                <span><b>Announcement:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse cursus augue vitae est ornare varius. Mauris egestas sem sapien, id bibendum libero finibus nec. Integer quis dui rhoncus, aliquet ipsum sit amet, volutpat odio.</span>
+              </span>
+            </span>
+          </p>
+          <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="img/about.png" class="logo" draggable="false" alt="" />
+          </div>
+          <div class="col-md-8">
+            <div class="mg-top-40">
+              <h4 class="section-title">ABOUT US<strong>HYPIXEL</strong></h4>
+              <div class="about-us">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales neque odio, in dignissim quam mollis rutrum. Sed iaculis bibendum augue ut efficitur. Praesent maximus massa ut aliquam semper. Donec posuere enim id condimentum pretium. Phasellus luctus consectetur lacinia. Aliquam erat volutpat. Donec dictum gravida pharetra. Nunc purus mi, vulputate eu augue id, auctor scelerisque orci.</p>
+                <p>
+                  Quisque pharetra porta augue. Suspendisse elit nunc, efficitur et dapibus non, tincidunt iaculis tellus. Duis sagittis nulla maximus tellus elementum, ut gravida ante facilisis. Pellentesque vestibulum elementum arcu, at elementum velit vehicula nec. Nam facilisis viverra libero, non consequat eros volutpat at. Sed sagittis hendrerit nibh a convallis. Aliquam ut faucibus ante. Nulla eget tempor enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                  cubilia curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque efficitur ex non dignissim rutrum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <svg id="curveUpColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" fill="#131417" stroke="#131417" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M0 100 C 20 0 50 0 100 100 Z" />
+      </svg>
+
+      <!-- Games -->
+      <section id="games">
+        <div class="games-background">
+          <div class="container">
+            <h4 class="section-title">CHECK OUT OUR GAMES <strong>OUR GAMES</strong></h4>
+            <div class="swiper games-swiper">
+              <div class="swiper-wrapper games-cards">
+                <div class="swiper-slide active">
+                  <a href="#">
+                    <img src="img/games/factions.png" draggable="false" alt="" />
+                  </a>
+                  <div class="slider-item-detail">
+                    <h3>Factions</h3>
+                    <h4>Factions | Developed by Hypixel</h4>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="img/games/prison.jpg" draggable="false" alt="" />
+                  </a>
+                  <div class="slider-item-detail">
+                    <h3>Prison</h3>
+                    <h4>Prison | Developed by Hypixel</h4>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="img/games/skyblock.jpg" draggable="false" alt="" />
+                  </a>
+                  <div class="slider-item-detail">
+                    <h3>SkyBlock</h3>
+                    <h4>SkyBlock | Developed by Hypixel</h4>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="img/games/survival.jpg" draggable="false" alt="" />
+                  </a>
+                  <div class="slider-item-detail">
+                    <h3>Survival</h3>
+                    <h4>Survival | Developed by Hypixel</h4>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="img/games/minigames.png" draggable="false" alt="" />
+                  </a>
+                  <div class="slider-item-detail">
+                    <h3>Minigames</h3>
+                    <h4>Minigames | Developed by Hypixel</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="games-swiper-button-prev"><i class="bx bx-chevron-left"></i></div>
+              <div class="games-swiper-button-next"><i class="bx bx-chevron-right"></i></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <svg id="curveDownColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" fill="#131417" stroke="#131417" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M0 0 C 50 100 80 100 100 0 Z" />
+      </svg>
+
+      <!-- Partners -->
+      <section id="sponsor">
+        <div class="sponsor-background">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 justify-content-center text-center">
+                <img class="sponsor-image" src="img/partnership.png" draggable="false" alt="" />
+              </div>
+              <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                <h4 class="section-title">BECOME A PARTNER TODAY TO OBTAIN ADVANTAGES <strong>OUR PARTNERS</strong></h4>
+                <div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales neque odio, in dignissim quam mollis rutrum. Sed iaculis bibendum augue ut efficitur. Praesent maximus massa ut aliquam semper. Donec posuere enim id condimentum pretium. Phasellus luctus consectetur lacinia. Aliquam erat volutpat. Donec dictum gravida pharetra.</p>
+                  <a class="button" href="#">Contact Us</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper sponsor-swiper">
+              <div class="swiper-wrapper sponsor-cards customer-logos text-center">
+                <div class="swiper-slide sponsor-card"><img src="img/partners/hypixel.png" draggable="false" alt="Hypixel Logo" /></div>
+                <div class="swiper-slide sponsor-card"><img src="img/partners/hypixel.png" draggable="false" alt="Hypixel Logo" /></div>
+                <div class="swiper-slide sponsor-card"><img src="img/partners/hypixel.png" draggable="false" alt="Hypixel Logo" /></div>
+                <div class="swiper-slide sponsor-card"><img src="img/partners/hypixel.png" draggable="false" alt="Hypixel Logo" /></div>
+                <div class="swiper-slide sponsor-card"><img src="img/partners/hypixel.png" draggable="false" alt="Hypixel Logo" /></div>
+                <div class="swiper-slide sponsor-card"><img src="img/partners/hypixel.png" draggable="false" alt="Hypixel Logo" /></div>
+                <div class="swiper-slide sponsor-card"><img src="img/partners/hypixel.png" draggable="false" alt="Hypixel Logo" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <svg id="curveUpColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" fill="#131417" stroke="#131417" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M0 100 C 20 0 50 0 100 100 Z" />
+      </svg>
+
+      <!-- Testimonials -->
+      <section id="testimonials">
+        <div class="testimonials-background">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12">
+                <h4 class="section-title">WHAT THE SAY ABOUT US <strong>TESTIMONIALS</strong></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales neque odio, in dignissim quam mollis rutrum. Sed iaculis bibendum augue ut efficitur. Praesent maximus massa ut aliquam semper.</p>
+                <a class="button" href="#">Submit your review</a>
+              </div>
+              <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12">
+                <div class="swiper testimonials-swiper">
+                  <div class="swiper-wrapper testimonials-cards">
+                    <div class="swiper-slide testimonials-card">
+                      <img src="https://cravatar.eu/avatar/Screech46/128.png" draggable="false" alt="Screech Avatar" />
+                      <h5>Screech46</h5>
+                      <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales neque odio, in dignissim quam mollis rutrum. Sed iaculis bibendum augue ut efficitur. Praesent maximus massa ut aliquam semper.</p>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide testimonials-card">
+                      <img src="https://cravatar.eu/avatar/Screech46/128.png" draggable="false" alt="Screech Avatar" />
+                      <h5>Screech46</h5>
+                      <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales neque odio, in dignissim quam mollis rutrum. Sed iaculis bibendum augue ut efficitur. Praesent maximus massa ut aliquam semper.</p>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide testimonials-card">
+                      <img src="https://cravatar.eu/avatar/Screech46/128.png" draggable="false" alt="Screech Avatar" />
+                      <h5>Screech46</h5>
+                      <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales neque odio, in dignissim quam mollis rutrum. Sed iaculis bibendum augue ut efficitur. Praesent maximus massa ut aliquam semper.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="testimonials-buttons">
+                      <button class="testimonials-swiper-button-prev"><img src="img/icons/sort-left.png" draggable="false" /></button>
+                      <button class="testimonials-swiper-button-next"><img src="img/icons/sort-right.png" draggable="false" /></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <svg id="curveDownColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" fill="#131417" stroke="#131417" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M0 0 C 50 100 80 100 100 0 Z" />
+      </svg>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-container">
+          <div class="footer-about">
+            <h3>About Us</h3>
+            <span>Starting out as a YouTube channel making Minecraft Adventure Maps, Hypixel is now one of the largest and highest quality Minecraft Server Networks in the world, featuring original games such as The Walls, Mega Walls, Blitz Survival Games, and many more.</span>
+          </div>
+          <div class="footer-social">
+            <img src="img/logo.png" draggable="false" alt="Hypixel Logo" />
+            <span class="copyright">
+              ©
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              Hypixel | All rights reserved<br />Designed by <a href="https://astroloom.com/screech/">Screech</a>
+            </span>
+            <div class="socials">
+              <a href="#" class="discord"><i class="bx bxl-discord-alt"></i></a>
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="youtube"><i class="bx bxl-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-store">
+            <h3>Hypixel Store</h3>
+            <span>The administration works very hard to bring you unique, originally created content. Purchasing ranks, boosters, and mystery boxes helps support us in making more, higher quality content.</span>
+            <a href="#" class="button">Open Official Store</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

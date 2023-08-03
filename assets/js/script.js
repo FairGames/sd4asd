@@ -13,7 +13,7 @@ function openSocial(type) {
       url = 'https://github.com/secret';
       break;
 	case 'store':
-      url = 'https://store.riot-network.eu/';
+      url = 'https://store.pvpzone.cz/';
 	  break;
     case 'twitter':
       url = 'https://twitter.com/riotnetwork01';
@@ -28,7 +28,7 @@ function openSocial(type) {
       url = 'https://twitter.com/secret';
       break;
 	case 'bans':
-      url = 'http://bans.riot-network.eu:7896/bans.php';
+      url = 'http://bans.pvpzone.cz:7896/bans.php';
       break;
   }
 
@@ -37,16 +37,16 @@ function openSocial(type) {
 
 function startIntroTyping() {
   new TypeIt('#intro-text', {
-    speed: 50,
+    speed: 25,
   })
-    .type('welcome.', { delay: 1200 })
-    .delete(null, { delay: 1000 })
-    .type(`${mobile ? 'tap' : 'press any key'} to enter.`)
+    .type('vítejte.', { delay: 300 })
+    .delete(null, { delay: 250 })
+    .type(`${mobile ? 'tap' : 'zmáčkněte jakékoliv tlačítko'} pro vstup.`)
     .go();
 
   setTimeout(function () {
     switchAllowed = true;
-  }, 2500);
+  }, 250);
 }
 
 function typerStartTyping(typer) {
@@ -77,11 +77,11 @@ function startMainTyping() {
 }
 
 function switchScreen() {
-  document.title = 'riot-network.eu | home';
+  document.title = 'pvpzone.cz | home';
 
-  $('.intro').fadeOut(1000, function () {
-    $('.bg-image').fadeIn(1000);
-    $('.main').fadeIn(1000, function () {
+  $('.intro').fadeOut(300, function () {
+    $('.bg-image').fadeIn(300);
+    $('.main').fadeIn(300, function () {
       startMainTyping();
     });
   });

@@ -52,7 +52,7 @@ function startIntroTyping() {
 function typerStartTyping(typer) {
   typer.reset();
 
-  let text = ['Frakce', 'Kitmap', 'Practice'];
+  let text = ['Frakce', 'MCMMO', 'Kothy'];
 
   text.forEach(function (language, index) {
     typer.move(null);

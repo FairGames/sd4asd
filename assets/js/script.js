@@ -13,7 +13,7 @@ function openSocial(type) {
       url = 'https://github.com/secret';
       break;
 	case 'store':
-      url = 'https://store.pvpzone.cz/';
+      url = 'https://store.xpcraft.eu/';
 	  break;
     case 'twitter':
       url = 'https://twitter.com/riotnetwork01';
@@ -28,7 +28,7 @@ function openSocial(type) {
       url = 'https://twitter.com/secret';
       break;
 	case 'bans':
-      url = 'http://bans.pvpzone.cz:7896/bans.php';
+      url = 'http://bans.xpcraft.eu:7896/bans.php';
       break;
   }
 
@@ -77,7 +77,7 @@ function startMainTyping() {
 }
 
 function switchScreen() {
-  document.title = 'pvpzone.cz | home';
+  document.title = 'xpcraft.eu | home';
 
   $('.intro').fadeOut(300, function () {
     $('.bg-image').fadeIn(300);

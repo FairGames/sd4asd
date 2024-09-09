@@ -7,7 +7,7 @@ function openSocial(type) {
 
   switch (type) {
     case 'discord':
-      url = 'https://discord.gg/jsyR7dSpjU';
+      url = 'https://discord.xpcraft.eu';
       break;
     case 'github':
       url = 'https://github.com/secret';
@@ -19,7 +19,7 @@ function openSocial(type) {
       url = 'https://twitter.com/riotnetwork01';
       break;
 	case 'instagram':
-      url = 'https://www.instagram.com/riotnetwork01';
+      url = 'https://www.instagram.com/xpcrafteu';
       break;
 	case 'facebook':
       url = 'https://twitter.com/secret';
